@@ -1,0 +1,14 @@
+.login{
+    float: right;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+
+}
+.link{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    
+}
