@@ -31,7 +31,7 @@ const Login= (props)=>{
         const expirationDate =  new Date((new Date().getTime() +3600*1000))
         localStorage.setItem('expirationDate',expirationDate)
         setIsAuth(localStorage.getItem('token')!=null)
-        props.history.push('/')
+        props.history.push('/location')
        
       
     }).catch(e=>{

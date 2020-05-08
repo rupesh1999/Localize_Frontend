@@ -22,7 +22,7 @@ import MenuIcon from '@material-ui/icons/Menu';
   
 
 const Navigation = (props) => {
-  console.log(props.isAuth)
+ 
     const tokenExist = props.isAuth
     const[tokenAvailable,setTokenAvaiabe] = useState(tokenExist)
     const classes = useStyles();
@@ -30,9 +30,9 @@ const Navigation = (props) => {
     if(props.redirectpath==="Login"){
       if(props.token!==null &&props.isAuth){
         button = <Button color="inherit" onClick={()=>{
-              localStorage.removeItem('token')
+               localStorage.removeItem('token')
                localStorage.removeItem('expirationDate')
-               setTokenAvaiabe(false)
+              //  setTokenAvaiabe(false)
                props.setIsAuth(false)
               
            }}>Logout</Button>

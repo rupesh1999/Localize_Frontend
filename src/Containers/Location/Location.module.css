@@ -1,0 +1,13 @@
+.img{
+    width: 30px;
+    height: 30px;
+}
+.locationMarker{
+    background: none;
+    border: none;
+}
+.myLocation{
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+}

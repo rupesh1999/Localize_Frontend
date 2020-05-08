@@ -7,6 +7,7 @@ import Register from './Containers/Register/Regsiter'
 import {Route }from 'react-router-dom'
 import Login from './Containers/Login/Login'
 import Home from './Containers/Home/Home'
+import Location from './Containers/Location/Location'
 function App() {
   const token = localStorage.getItem('token')
   if(!token){
@@ -30,6 +31,7 @@ function App() {
       <Route path='/' exact component={Home}/>
      <Route path='/register' exact component={Register}/>
      <Route path='/login' exact component={Login}/>
+     <Route path='/location' exact component={Location}/>
     </div>
     </ApolloProvider>
   );
